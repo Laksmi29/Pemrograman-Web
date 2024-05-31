@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <link rel="stylesheet" type="text/css" href="../static/assets/bootstrap/css/bootstrap.min.css">
+        <script type="text/javascript" src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+        <style>
+          .detail {display: none;}
+          .selengkapnya {cursor: pointer; color:blueviolet}
+          .kembali {cursor: pointer; color:blueviolet}
+        </style>
+
+    </head>
+    <body>
+        <!--Header Start-->
+        <div class="container-fluid text-center bg-secondary-subtle px-5">
+            <div class="row">
+              <div class="col">
+                <img src="../static/assets/img/nctdream.png" style="height: 80px;"> NCT DREAM
+              </div>
+            </div>
+          </div>
+        <!--Header Finish -->
+
+        <!-- Nav Bar Start-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid px-5">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'otomotif' %}">otomotif</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'lifestyle' %}">lifestyle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'sport' %}">sport</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'education' %}">education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'login' %}">login</a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!-- Nav BAr FInish-->
